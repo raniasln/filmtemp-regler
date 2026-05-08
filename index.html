@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-<meta charset="UTF-8">
-<title>Filmtemperatur – Pfropfenströmung</title>
+  <meta charset="UTF-8">
+  <title>Filmtemperatur – Pfropfenströmung</title>
 
-<button onclick="resetValues()">Zurücksetzen</button>
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+    }
 
-<script>
-function resetValues() {
-  tv.value = 180;
-  p.value = 20;
-  tv.dispatchEvent(new Event("input"));
-  p.dispatchEvent(new Event("input"));
-}
-</script>
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px;
+    }
 
-<style>
+    label {
+      display: block;
+      margin: 8px 0;
+    }
+
+    button {
+      margin: 12px 0;
+    }
+  </style>
+</head>
+
   body {
     margin: 0;
     overflow: hidden;
@@ -23,7 +36,6 @@ function resetValues() {
 </style>
 
   <style>
-  body 
 <p><strong>Aufgabe:</strong> Stellen Sie die Vorlauftemperatur und Pumpendrehzahl so ein, 
 dass die Filmtemperatur unter 320 °C bleibt.</p>
 

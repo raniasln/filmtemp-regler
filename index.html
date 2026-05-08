@@ -3,8 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <title>Filmtemperatur – Pfropfenströmung</title>
+
+<button onclick="resetValues()">Zurücksetzen</button>
+
+<script>
+function resetValues() {
+  tv.value = 180;
+  p.value = 20;
+  tv.dispatchEvent(new Event("input"));
+  p.dispatchEvent(new Event("input"));
+}
+</script>
+
 <style>
   body {
+    margin: 0;
+    overflow: hidden;
+  }
+</style>
+
+  <style>
+  body 
+<p><strong>Aufgabe:</strong> Stellen Sie die Vorlauftemperatur und Pumpendrehzahl so ein, 
+dass die Filmtemperatur unter 320 °C bleibt.</p>
+
+{
     font-family: Arial, sans-serif;
     margin: 12px;
   }
